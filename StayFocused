@@ -3,6 +3,7 @@
 
 var user = readLine("What sites do you want to be on the restricted list?");
 
+var URL = alert(document.URL);
 var timeLimit = readInt("What is the meximum amount of hours you can spen on this this website? ");
 
 var exceedsTimeLimit = false;
