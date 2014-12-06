@@ -1,0 +1,39 @@
+
+<title> <center> <h1> STAY FOCUSED </h1> </center></title>
+
+var user = readLine("What sites do you want to be on the restricted list?");
+
+var timeLimit = readInt("What is the meximum amount of hours you can spen on this this website? ");
+
+var exceedsTimeLimit = false;
+
+//Creates a list for the user to determine which sites are to not be used. 
+function restrictedListSites (){
+	while(true){
+		if(user == true){
+			console.log("These sites are on the restricted list!: " + user);
+		}else if (user == false){
+			console.log("These sites are not on the restricted list!: "+ !user);
+		}
+		if(user == null){
+			break;
+		}
+	}
+}
+
+//Creates a list for the user to determine which sites are to be restricted after a certain amount of time.
+function restrictedAfterAWhile () {
+	if(myTimer >= timeLimit){
+		exceedsTimeLimit == true
+	}
+	
+}
+
+
+//Displays current time on page.
+var currentTime = setInterval(function() {mytimer()}, 1000);
+function myTimer() {
+	var date = new Date();
+	document.getElementById(elementId).innerHTML = date.toLocaleTimeString;
+}
+
