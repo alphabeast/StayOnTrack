@@ -9,6 +9,7 @@ var timeLimit = readInt("What is the meximum amount of hours you can spen on thi
 
 var exceedsTimeLimit = false;
 
+var loggedIn = alert("Username: ") + alert("Password: ");
 //Creates a list for the user to determine which sites are to not be used. 
 function restrictedListSites (){
 	while(true){
@@ -27,6 +28,7 @@ function restrictedListSites (){
 function restrictedAfterAWhile () {
 	if(myTimer >= timeLimit){
 		exceedsTimeLimit == true;
+		//stops user from 
 	}
 	
 }
